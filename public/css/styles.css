@@ -1,3 +1,196 @@
 body {
   background-color: rgb(197, 228, 231);
 }
+
+span {
+  font-family: "Roboto Mono", monospace;
+  font-size: 1rem;
+  font-weight: bold;
+
+}
+
+
+
+
+label {
+  font-family: "Roboto Mono", monospace;
+  font-size: 1rem;
+  display: block;
+  font-weight: bold;
+  color: rgb(120, 132, 132);
+  margin-bottom: 8px;
+}
+
+.text_line {
+  color: rgb(0, 71, 75);
+  font-family: "Roboto Mono", monospace;
+  font-size: 1rem;
+  position: absolute;
+  right: 12px;
+  transform: translateY(-10%);
+  background-color: inherit;
+  text-align: right;
+  border: 0;
+  font-weight: bold;
+
+
+}
+
+input[type="text"]:focus {
+  outline: none;
+}
+
+input[type="text"]::placeholder {
+  color: rgb(168, 188, 189);
+}
+
+
+
+
+.card {
+  width: 920px;
+  height: 460px;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 25px;
+}
+
+.result_card {
+  width: 400px;
+  height: 400px;
+  background-color: rgb(0, 71, 75);
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  border-radius: 15px;
+
+
+
+}
+
+
+.form_card {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  border-radius: 15px;
+}
+
+
+.input_group {
+  margin-left: 10px;
+  margin-bottom: 30px;
+}
+
+.text_input {
+  color: rgb(168, 188, 189);
+  background-color: rgb(243, 248, 251);
+  border: 0;
+  border-radius: 5px;
+  padding: 12px;
+
+}
+
+.text_input:focus-within{
+  border: 1px solid rgb(35, 190, 172);
+}
+
+
+.zero_input {
+  border: 1px solid orange;
+}
+
+
+.btn {
+  width: 120px;
+  height: 50px;
+  background-color: rgb(0, 71, 75);
+  color: #fff;
+  border: 0;
+  font-family: "Roboto Mono", monospace;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-right: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: rgb(159, 232, 223);
+  color: rgb(0, 71, 75);
+}
+
+.btn_clicked {
+  background-color: rgb(35, 190, 172);
+  color: rgb(0, 71, 75);
+}
+
+.btn.btn_custom {
+  color: rgb(0, 71, 75);
+  background-color: rgb(243, 248, 251);
+  text-align: center;
+  padding: 0;
+}
+
+.btn.btn_custom:focus{
+  border: 1px solid rgb(35, 190, 172);
+}
+
+.result_group {
+  text-align: center;
+
+}
+
+.result_group_text{
+  display: inline-block;
+  width: 170px;
+  font-family: "Roboto Mono", monospace;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+
+  text-align: left;
+}
+
+.result_group_result{
+  width: 170px;
+  display: inline-block;
+  font-family: "Roboto Mono", monospace;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: rgb(35, 190, 172);
+  margin-bottom: -100px;
+  text-align: right;
+
+}
+
+.result_group_text span {
+  font-family: "Roboto Mono", monospace;
+  font-size: 0.8rem;
+  color: rgb(111, 160, 164);
+}
+
+.reset_btn {
+  width: 340px;
+  font-family: "Roboto Mono", monospace;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 5px 0;
+  margin-top: 125px;
+  background-color: rgb(13, 104, 109);
+  color: rgb(5, 93, 97);
+
+  border: 0;
+  border-radius: 5px;
+}
+
+
+.reset_btn:hover {
+  background-color: rgb(159, 232, 223);
+  color: rgb(0, 71, 75);
+}

@@ -1,45 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="public/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
   <link rel="stylesheet" href="css/styles.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
 
   <title>Tip calculator app</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
 </head>
+
 <body>
 
-  Bill
+  <div class="card">
 
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
+    <form>
+      <div class="form_card">
 
-  Number of People
+        <div class="input_group">
+          <label for="t1">Bill</label>
+          <div class="t1 text_input">
+            <span>$</span>
+            <input id="bill_input" class="text_line" type="text" name="bill" placeholder="0"></input>
+          </div>
+        </div>
+        <div class="input_group">
+          <label for="">Select Tip %</label>
+          <table>
+            <tr>
+              <td><button class="btn" type="button" name="button">5%</button></td>
+              <td><button class="btn" type="button" name="button">10%</button></td>
+              <td><button class="btn" type="button" name="button">15%</button></td>
+            </tr>
+            <tr>
+              <td><button class="btn" type="button" name="button">20%</button></td>
+              <td><button class="btn" type="button" name="button">25%</button></td>
+              <td><input type="text" class="btn btn_custom" , placeholder="Custom"></td>
+            </tr>
+          </table>
+        </div>
+        <div class="input_group">
+          <label for="t2">Number of People</label>
+          <div class="t2 text_input">
+            <span>&#9822;</span>
+            <input id="num_people_input" class="text_line" type="text" name="num_people" placeholder="0"></input>
+          </div>
+        </div>
+      </div>
+    </form>
 
-  Tip Amount
-  / person
 
-  Total
-  / person
+    <div class="result_card">
+      <div class="result_group">
+        <div class="result_group_text">
+          <p>
+            Tip Amount
+            <br>
+            <span>/ person</span>
+          </p>
+        </div>
 
-  Reset
+        <div class="result_group_result">
+          <p>
+            $0.00
+          </p>
+        </div>
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
+      </div>
+      <div class="result_group">
+        <div class="result_group_text">
+          <p>
+            Total
+            <br>
+            <span>/ person</span>
+          </p>
+        </div>
+
+        <div class="result_group_result">
+          <p>
+            $0.00
+          </p>
+        </div>
+
+      </div>
+
+      <div class="result_group">
+        <button class="reset_btn" type="button" name="button">RESET</button>
+      </div>
+    </div>
+
+
+
+
+
   </div>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="scripts/calculator.js"></script>
 </body>
+
 </html>
