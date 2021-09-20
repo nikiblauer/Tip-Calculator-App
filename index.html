@@ -29,8 +29,9 @@
 
 <body>
 
-  <div class="card">
 
+
+  <div class="card">
     <form>
       <div class="form_card">
 
@@ -38,7 +39,7 @@
           <label for="t1">Bill</label>
           <div class="t1 text_input">
             <span>$</span>
-            <input id="bill_input" class="text_line" type="text" name="bill" placeholder="0"></input>
+            <input id="bill_input" class="text_line" type="text" name="bill" placeholder="0.00" autocomplete="off"></input>
           </div>
         </div>
         <div class="input_group">
@@ -60,7 +61,7 @@
           <label for="t2">Number of People</label>
           <div class="t2 text_input">
             <span>&#9822;</span>
-            <input id="num_people_input" class="text_line" type="text" name="num_people" placeholder="0"></input>
+            <input id="num_people_input" class="text_line" type="text" name="num_people" placeholder="0.00" autocomplete="off"></input>
           </div>
         </div>
       </div>
@@ -78,7 +79,7 @@
         </div>
 
         <div class="result_group_result">
-          <p>
+          <p class="tip">
             $0.00
           </p>
         </div>
@@ -94,7 +95,7 @@
         </div>
 
         <div class="result_group_result">
-          <p>
+          <p class="total_bill">
             $0.00
           </p>
         </div>
