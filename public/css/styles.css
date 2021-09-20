@@ -3,6 +3,7 @@
 
 body {
   background-color: rgb(197, 228, 231);
+  text-align: center;
 }
 
 span {
@@ -12,6 +13,9 @@ span {
 
 }
 
+img{
+  margin: 30px;
+}
 
 
 
@@ -25,6 +29,7 @@ label {
 }
 
 .text_line {
+  width: 330px;
   color: rgb(0, 71, 75);
   font-family: "Roboto Mono", monospace;
   font-size: 1rem;
@@ -76,6 +81,7 @@ input[type="text"]::placeholder {
 
 
 .form_card {
+  text-align: left;
   width: 400px;
   height: 400px;
   position: absolute;
