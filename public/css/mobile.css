@@ -1,19 +1,6 @@
-
-
-
 body {
   background-color: rgb(197, 228, 231);
 }
-
-span {
-  font-family: "Roboto Mono", monospace;
-  font-size: 1rem;
-  font-weight: bold;
-
-}
-
-
-
 
 label {
   font-family: "Roboto Mono", monospace;
@@ -24,20 +11,6 @@ label {
   margin-bottom: 8px;
 }
 
-.text_line {
-  color: rgb(0, 71, 75);
-  font-family: "Roboto Mono", monospace;
-  font-size: 1rem;
-  position: absolute;
-  right: 12px;
-  transform: translateY(-10%);
-  background-color: inherit;
-  text-align: right;
-  border: 0;
-  font-weight: bold;
-
-
-}
 
 input[type="text"]:focus {
   outline: none;
@@ -51,44 +24,49 @@ input[type="text"]::placeholder {
 
 
 .card {
-  width: 920px;
-  height: 460px;
+  width: 100%;
+
   background-color: #fff;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   border-radius: 25px;
+  text-align: center;
+}
+
+.form_card {
+  width: 100%;
+  border-radius: 15px;
+  text-align: left;
+  padding-top: 50px;
 }
 
 .result_card {
-  width: 400px;
-  height: 400px;
+  width: 100%;
   background-color: rgb(0, 71, 75);
-  position: absolute;
-  top: 30px;
-  right: 30px;
   border-radius: 15px;
-
-
-
+  margin-top: 50px;
 }
-
-
-.form_card {
-  width: 400px;
-  height: 400px;
-  position: absolute;
-  top: 30px;
-  left: 30px;
-  border-radius: 15px;
-}
-
 
 .input_group {
   margin-left: 10px;
+  margin-right: 10px;
   margin-bottom: 30px;
 }
+
+
+.text_line {
+  color: rgb(0, 71, 75);
+  font-family: "Roboto Mono", monospace;
+  font-size: 1rem;
+  position: absolute;
+  right: 22px;
+  transform: translateY(-10%);
+  background-color: inherit;
+  text-align: right;
+  border: 0;
+  font-weight: bold;
+
+
+}
+
 
 .text_input {
   color: rgb(168, 188, 189);
@@ -103,10 +81,6 @@ input[type="text"]::placeholder {
   border: 1px solid rgb(35, 190, 172);
 }
 
-
-.zero_input {
-  border: 1px solid orange;
-}
 
 
 .btn {
@@ -144,6 +118,8 @@ input[type="text"]::placeholder {
   border: 1px solid rgb(35, 190, 172);
 }
 
+
+
 .result_group {
   text-align: center;
 
@@ -178,13 +154,15 @@ input[type="text"]::placeholder {
   color: rgb(111, 160, 164);
 }
 
+
 .reset_btn {
   width: 340px;
   font-family: "Roboto Mono", monospace;
   font-size: 1.5rem;
   font-weight: bold;
   padding: 5px 0;
-  margin-top: 125px;
+  margin-top: 50px;
+  margin-bottom: 70px;
   background-color: rgb(13, 104, 109);
   color: rgb(5, 93, 97);
 
@@ -196,4 +174,13 @@ input[type="text"]::placeholder {
 .reset_btn:hover {
   background-color: rgb(159, 232, 223);
   color: rgb(0, 71, 75);
+}
+
+.text_input:focus-within{
+  border: 1px solid rgb(35, 190, 172);
+}
+
+
+.zero_input {
+  border: 1px solid orange;
 }
